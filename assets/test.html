@@ -1,0 +1,25 @@
+<html>
+<center><b><u>Javascript</u></b></center>
+<script language="javascript">
+function getData() {
+document.getElementById("namefromandroid").value = locater.getNameFromAndroidET();
+var html = ""+document.getElementById("namefromandroid").value;
+alert("JavaScript says: Name entered in Android EditText is "+html);
+}
+function setData() {
+var html = ""+document.getElementById("namefromjs").value;
+locater.sayHelloFromAndroid(html);
+}
+function sayHelloFromJS(value) {
+alert("JavaScript says: Hello "+value+" !!! How are you?");
+}
+</script>
+</head>
+<body>
+<p> Enter your name here <input type="text" id="namefromjs" />
+<p> <input type="button" onclick= "setData()" value="Call Android sayHelloFromAndroid() method from JS">
+<p> Data pass from Android</p>
+<p> <input type="button" onclick= "getData()" value="Get Name From Android EditText">
+<p> Name from Android is <input type="text" id="namefromandroid" />
+</body>
+</html>

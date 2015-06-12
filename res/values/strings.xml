@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, WebViewJavaScriptActivity!</string>
+    <string name="app_name">WebViewJavaScript</string>
+	<string name="app_name1">WebView Example</string>
+</resources>
